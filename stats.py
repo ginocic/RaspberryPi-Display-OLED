@@ -110,7 +110,7 @@ while True:
     # Shell scripts for system monitoring from here : https://unix.stackexchange.com/questions/119126/command-to-display-memory-usage-disk-usage-and-cpu-load
     cmd = "hostname -I | cut -d\' \' -f1"
     IP = subprocess.check_output(cmd, shell = True )
-    cmd = "top -bn1 | grep load | awk '{printf \"CPU Load: %.2f\", $(NF-2)}'"
+    cmd = "top -bn1 | grep load | awk '{printf \"CPU: L%.2f\", $(NF-2)}'"
     CPU = subprocess.check_output(cmd, shell = True )
     cmd = "free -m | awk 'NR==2{printf \"Mem: %s/%sMB %.2f%%\", $3,$2,$3*100/$2 }'"
     MemUsage = subprocess.check_output(cmd, shell = True )
@@ -130,8 +130,7 @@ while True:
     #draw.text((x, top+25),    str(Disk),  font=font, fill=255)
 
     draw.text((x, top+2), "IP: " + str(IP,'utf-8'), font=font, fill=255)
-    new_temp = str(temp[0:4], 'utf-8') + '°C'
-    draw.text((x, top+18), str(CPU,'utf-8') + " " + new_temp , font=font, fill=255)
+    draw.text((x, top+18), str(CPU,'utf-8') + " T" + str(temp[0:4], 'utf-8') + '°C' , font=font, fill=255)
     draw.text((x, top+34), str(MemUsage,'utf-8'), font=font, fill=255)
     draw.text((x, top+50), str(Disk,'utf-8'), font=font, fill=255)
 
