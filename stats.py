@@ -87,7 +87,7 @@ while True:
     # Write two lines of text.
     draw.text((x, top+2), "IP: " + str(IP,'utf-8'), font=font, fill=255)
     draw.text((x, top+18), str(CPU,'utf-8') + " T" + str(temp[0:4],'utf-8') + '°C' , font=font, fill=255)
-    draw.text((x, top+34), str(MemUsage,'utf-8'), font=font, fill=255)
+    draw.text((x, top+34), MemUsage, font=font, fill=255)
     draw.text((x, top+50), str(Disk,'utf-8'), font=font, fill=255)
 
     # Display image.
