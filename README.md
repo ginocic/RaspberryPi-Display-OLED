@@ -1,7 +1,7 @@
 # Connettere e programmare un display OLED per il Raspberry Pi
 
 ## Prerequisiti
-1. Preparare il raspberry come descritto [qui](https://gist.github.com/ginocic/6c1f6e845266ac262f8b532d7405ddc7)
+1. Preparare il raspberry come descritto [qui](https://github.com/ginocic/Preparazione-Raspberry)
 2. Connettere il display al raspberry come descritto [qui](https://www.the-diy-life.com/connect-and-program-an-oled-stats-display-for-your-raspberry-pi/)
 
 ## Configurazione del Raspberry
