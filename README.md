@@ -20,7 +20,7 @@ riavvia
 ## Installazione moduli e librerie necessarie
 Dopo il riavvio, riconnettersi al raspberry ed eseguire i seguenti comandi
 ```bash
-sudo apt-get install python3-pip python3-smbus python3-pil i2c-tools git
+sudo apt-get install -y python3-pip python3-smbus python3-pil i2c-tools git
 git clone https://github.com/adafruit/Adafruit_CircuitPython_SSD1306.git
 sudo pip3 install adafruit-circuitpython-ssd1306
 ```
